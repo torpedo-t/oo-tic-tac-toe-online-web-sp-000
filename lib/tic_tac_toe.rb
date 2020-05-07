@@ -97,13 +97,13 @@ class TicTacToe
   end
   end
 
-  def play
+  def play(token)
     #binding.pry
    until over?
    turn
   end
   if won?
-   puts "Congratulations !"
+   puts "Congratulations #{token}!"
   else
    puts "Cat\'s Game!"
   end
