@@ -104,7 +104,7 @@ class TicTacToe
   end
   if won?
     binding.pry
-   puts "Congratulations !"
+   puts "Congratulations #{{winner}}!"
   else
    puts "Cat\'s Game!"
   end
