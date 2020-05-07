@@ -103,6 +103,7 @@ class TicTacToe
    turn
   end
   if won?
+    binding.pry
    puts "Congratulations !"
   else
    puts "Cat\'s Game!"
