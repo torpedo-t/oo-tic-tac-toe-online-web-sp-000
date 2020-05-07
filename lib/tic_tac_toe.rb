@@ -1,3 +1,4 @@
+require 'pry'
 class TicTacToe
   def initialize(board = nil)
     @board = board || Array.new(9, " ")
@@ -82,28 +83,29 @@ class TicTacToe
   end
 
   def draw?
-   @board.full? && !@board.won?
+   full? && !won?
   end
 
   def over?
-   @board.won? || @board.draw?
+   won? || draw?
   end
 
   def winner
-  if @board.won?
-   winning_combo = @board.won?
+  if won?
+   winning_combo = won?
   return @board[winning_combo[0]]
   end
   end
 
   def play
-   until @board.over?
-   @board.turn
+    binding.pry
+   until over?
+   turn
   end
-  if @board.won?
-   puts "Congratulations #{winner(board)}!"
+  if won?
+   puts "Congratulations #{winner(@board)}!"
   else
    puts "Cat\'s Game!"
   end
-end
-end
+  end
+ end
