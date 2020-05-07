@@ -103,7 +103,7 @@ class TicTacToe
    turn
   end
   if won?
-   puts "Congratulations winner!"
+   puts "Congratulations @board[winning_combo[0]]!"
   else
    puts "Cat\'s Game!"
   end
