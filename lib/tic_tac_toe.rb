@@ -97,7 +97,7 @@ class TicTacToe
   end
   end
 
-  def play(token)
+  def play
     #binding.pry
    until over?
    turn
