@@ -105,7 +105,6 @@ class TicTacToe
   if won?
     binding.pry
    puts "Congratulations #{winner}!"
-   puts "Congratulations #{@board[@won_combo[0]]}"
   else
    puts "Cat\'s Game!"
   end
