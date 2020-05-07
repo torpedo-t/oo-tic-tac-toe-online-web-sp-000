@@ -92,8 +92,8 @@ class TicTacToe
 
   def winner
   if won?
-   @won_combo = won?
-  return @board[@won_combo[0]]
+   won_combo = won?
+  return @board[won_combo[0]]
   end
   end
 
@@ -104,7 +104,7 @@ class TicTacToe
   end
   if won?
     binding.pry
-   #puts "Congratulations #{winner}!"
+   puts "Congratulations #{winner}!"
    puts "Congratulations #{@board[@won_combo[0]]}"
   else
    puts "Cat\'s Game!"
